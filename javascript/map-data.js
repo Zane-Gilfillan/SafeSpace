@@ -24,6 +24,7 @@ function initMap() {
 
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+//so the goal is now to change the lat and lng from numbers into variables. so we can pass them around our app as we please. i added some ideas to our project board to check out
 const locations = [
     { lat: 41.8888675, lng: -87.6243635 },
     { lat: 41.8526105, lng: -87.6228241 },
