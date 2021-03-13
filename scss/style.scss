@@ -5,35 +5,99 @@
     font-size: 62.5%;
 }
 
-body {
-    background-color: rgb(40, 52, 216);
-    color: rgb(243, 243, 247);
-    font-family: Montserrat;
+//variables 
+
+$light-color: rgb(243, 243, 247);
+$main-blue: rgb(40, 52, 216);
+
+
+//Utilities
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.nav {
-    a {
-        color: #fff;
-    }
-}
-
-.title-holder {
-    text-align: center;
-}
-
-.map-container {
-
-    height: 25rem;
-    width: 20rem;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-    left: 4rem;
-    
+.hide {
+    display: none;
 }
 
 #map {
     height: 20rem;
-    width: 15rem;   
+    width: 22rem;   
+}
+
+
+//main body
+body {
+    background-color: $main-blue;
+    color: $light-color;
+    font-family: Montserrat;
+}
+
+//navagation bar
+
+.nav-bar {
+
+    .nav {
+        a {
+            color: #fff;
+            font-size: .9rem;
+        }
+    }
+}
+
+//headding and intro text
+
+.header {
+
+    .title-holder {
+
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+
+}
+
+//showcase area for landing page
+
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    .map-container {
+        margin: auto;
+        padding: auto;
+        height: 25rem;
+        width: 20rem;
+        position: relative;
+        right: 1rem;
+    }
+
+    .btn {
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 5rem;
+        width: 20rem;
+    }
+}
+
+
+
+
+
+.img-holder {
+    
+    img {
+        width: 30rem;
+    } 
 }
