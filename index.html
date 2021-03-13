@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>bathroom || finder</title>
 </head>
 <body>
-    <h1>Safe Bathroom Finder</h1>
-    <h3>My Google Maps Demo</h3>
+    <ul class="dropdown menu nav" data-dropdown-menu>
+        <li><a href="#">map</a></li>
+        <li><a href="#">my safe spaces</a></li>
+    </ul>
+    <div class="title-holder"><h1>Safe Space</h1></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, at.</p>
     <!--The div element for the map -->
     <div id="map"></div>
 
     
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzvUt6VkynGcJDxKcYm7Q2xoawOexgHVE&callback=initMap" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- <script src="javascript/main.js"></script> -->
+    <script src="javascript/main.js"></script>
     <script src="javascript/map-data.js"></script>
 </body>
 </html>
