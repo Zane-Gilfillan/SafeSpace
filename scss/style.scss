@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(40, 52, 216);
+    color: rgb(243, 243, 247);
+}
+
+.title-holder {
+    text-align: center;
 }
 
 #map {
-    height: 400px;
-    
-    width: 600px;
-
+    height: 20rem;
+    width: 40rem;
 }
