@@ -8,13 +8,32 @@
 body {
     background-color: rgb(40, 52, 216);
     color: rgb(243, 243, 247);
+    font-family: Montserrat;
+}
+
+.nav {
+    a {
+        color: #fff;
+    }
 }
 
 .title-holder {
     text-align: center;
 }
 
+.map-container {
+
+    height: 25rem;
+    width: 20rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    left: 4rem;
+    
+}
+
 #map {
     height: 20rem;
-    width: 40rem;
+    width: 15rem;   
 }
