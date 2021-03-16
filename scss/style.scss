@@ -17,6 +17,13 @@ $main-blue: rgb(40, 52, 216);
     grid-template-columns: repeat(1, 1fr);
 }
 
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
 .hide {
     display: none;
 }
@@ -89,15 +96,4 @@ body {
         border-radius: 5rem;
         width: 20rem;
     }
-}
-
-
-
-
-
-.img-holder {
-    
-    img {
-        width: 30rem;
-    } 
 }
