@@ -1,4 +1,4 @@
-console.log('hello world')
+// console.log('hello world')
 
 // $.getJSON(
 //     'https://www.refugerestrooms.org/api/v1/restrooms/search?page=1&per_page=100&offset=0&ada=true&unisex=true&query=Chicago',
