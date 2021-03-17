@@ -1,18 +1,32 @@
 let map, infoWindow;
 
 function initMap() {
+  const customLatLng = { lat: 41.8888675, lng: -87.6243635 };
+
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 8,
-      center: { lat: 41.8888675, lng: -87.6243635 },
+      center: customLatLng,
     });
     
-    infoWindow = new google.maps.InfoWindow();
+    const marker = new google.maps.Marker({
+      position: customLatLng,
+      map,
+      title: "Click to Zoom"
+    });
+
+    infoWindow = new google.maps.InfoWindow({
+      content: `<div id="content">
+      Hello
+      </div>`
+    });
     const locationButton = document.createElement("button");
     locationButton.textContent = "Pan to Current Location";
     locationButton.classList.add("custom-map-control-button");
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-    locationButton.addEventListener("click", () => {
+    locationButton.addEventListener("click", (e) => {
     // Try HTML5 geolocation.
+    console.log(e.target)
+    map.setCenter(marker.getPosition())
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -41,10 +55,27 @@ function initMap() {
     // create an array of markers based on a given "locations" array.
     // The map() method here has nothing to do with the Google Maps API.
     const markers = locations.map((location, i) => {
-      return new google.maps.Marker({
+      //add event listener for each marker to get info about
+      //the individual markers here
+      let newWindow = new google.maps.InfoWindow({
+        content: `<div id="content">
+        <p>Hello world</p>
+        </div>`
+      })
+
+      let newMark = new google.maps.Marker({
         position: location,
+        map,
+        title: "String for now",
         label: labels[i % labels.length],
       });
+      newMark.addListener("click", () => {
+        // console.log(this)
+        map.setZoom(16)
+        map.setCenter(newMark.getPosition())
+        newWindow.open(map, newMark)
+      })
+      return newMark
     });
     // Add a marker clusterer to manage the markers.
     new MarkerClusterer(map, markers, {

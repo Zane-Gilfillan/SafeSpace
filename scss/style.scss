@@ -29,6 +29,7 @@ $main-blue: rgb(40, 52, 216);
 }
 
 #map {
+    z-index: 9999;
     height: 20rem;
     width: 22rem;   
 }
