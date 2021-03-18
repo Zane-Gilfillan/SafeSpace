@@ -73,9 +73,7 @@ function initMap() {
       //add event listener for each marker to get info about
       //the individual markers here
       let newWindow = new google.maps.InfoWindow({
-        content: `<div id="content">
-        <p>Hello world</p>
-        </div>`
+        content: "<h1>Name:</h1>" + locations[0].name + "<h1>Address</h1>" + locations[0].streetName,
       })
 
       let newMark = new google.maps.Marker({
