@@ -35,8 +35,9 @@
             </div>
     
             <div class="card-section" id="card1">
-                <h5><span id="name">Hampton Inn Chicago McCormick Place</span></h5>
-                <p id="address"> 123 E Cermak Rd Suite 100, Chicago, IL 60616 </p>
+                <ul id="saved"><ul></ul>
+                <!-- <h5><span id="name">Hampton Inn Chicago McCormick Place</span></h5>
+                <p id="address"> 123 E Cermak Rd Suite 100, Chicago, IL 60616 </p> -->
             </div>
             <button class="button" data-cardSelectButton>one</button>
         </div>
@@ -110,5 +111,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="javascript/main.js"></script>
     <script src="javascript/map-data.js"></script>
+
+<script>
+    locations.forEach((location, i) => {
+
+if (window.localStorage.getItem(i)) {
+document.getElementById("saved").innerHTML += "<li>" + location.name + "</li>";  
+}
+});
+
+</script>
+
 </body>
 </html>

@@ -73,11 +73,8 @@ function initMap() {
       //add event listener for each marker to get info about
       //the individual markers here
       let newWindow = new google.maps.InfoWindow({
-        content: `<div id="content">
-        <p>Hello world</p>
-        </div>`
+        content: "<h1>Name:</h1>" + location.name + "<h1>Address</h1>" + location.streetName + "<a href='#' onclick='save(" + i + ")'>Save</a>",
       })
-
       let newMark = new google.maps.Marker({
         position: location,
         map,
@@ -113,6 +110,15 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 //so the goal is now to change the lat and lng from numbers into variables. so we can pass them around our app as we please. i added some ideas to our project board to check out
+
+function save (i) {
+  console.log (i)
+  window.localStorage.setItem(i,true);
+  window.localStorage.getItem(i)
+// => return "true" if was saved or "null" if not
+}
+ 
+
 const locations = 
 [
   {
