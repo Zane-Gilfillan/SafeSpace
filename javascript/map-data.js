@@ -19,11 +19,6 @@ function initMap() {
     locationButton.style.fontSize = ".8rem"
     locationButton.style.backgroundColor = "#FFC300"
     locationButton.style.borderRadius = "5rem"
-
-    
-    
-    
-
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
     locationButton.addEventListener("click", () => {
     // Try HTML5 geolocation.
