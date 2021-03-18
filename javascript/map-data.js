@@ -74,7 +74,6 @@ function initMap() {
       //the individual markers here
       let newWindow = new google.maps.InfoWindow({
         content: "<h1>Name:</h1>" + location.name + "<h1>Address</h1>" + location.streetName + "<a href='#' onclick='save(" + i + ")'>Save</a>",
-      })
       let newMark = new google.maps.Marker({
         position: location,
         map,
