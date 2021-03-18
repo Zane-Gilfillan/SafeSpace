@@ -29,9 +29,10 @@ $main-blue: rgb(40, 52, 216);
 }
 
 #map {
-    height: 30rem;
-    width: 100%;  
+    height: 20rem;
+    width: 22rem;   
 }
+
 
 //main body
 body {
@@ -84,15 +85,15 @@ body {
         margin: auto;
         padding: auto;
         height: 25rem;
-        width: 30rem;
+        width: 20rem;
+        position: relative;
+        right: 1rem;
     }
 
     .btn {
         margin: 1rem;
         padding: 1rem;
         border-radius: 5rem;
-        width: 30rem;
-        position: relative;
-        right: 1rem;
+        width: 20rem;
     }
 }

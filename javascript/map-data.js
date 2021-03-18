@@ -9,16 +9,6 @@ function initMap() {
     infoWindow = new google.maps.InfoWindow();
     const mapHolder = document.querySelector('map-container')
     const locationButton = document.createElement("button");
-
-    locationButton.textContent = "Find My Location";
-    locationButton.classList.add("custom-map-control-button");
-    locationButton.style.height = "3rem"
-    locationButton.style.width = "5rem"
-    locationButton.style.top = "1rem"
-    locationButton.style.left = "2rem"
-    locationButton.style.fontSize = ".8rem"
-    locationButton.style.backgroundColor = "#FFC300"
-    locationButton.style.borderRadius = "5rem"
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
     locationButton.addEventListener("click", () => {
     // Try HTML5 geolocation.
