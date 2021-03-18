@@ -29,11 +29,9 @@ $main-blue: rgb(40, 52, 216);
 }
 
 #map {
-    z-index: 9999;
-    height: 20rem;
-    width: 22rem;   
+    height: 30rem;
+    width: 100%;  
 }
-
 
 //main body
 body {
@@ -86,15 +84,15 @@ body {
         margin: auto;
         padding: auto;
         height: 25rem;
-        width: 20rem;
-        position: relative;
-        right: 1rem;
+        width: 30rem;
     }
 
     .btn {
         margin: 1rem;
         padding: 1rem;
         border-radius: 5rem;
-        width: 20rem;
+        width: 30rem;
+        position: relative;
+        right: 1rem;
     }
 }
