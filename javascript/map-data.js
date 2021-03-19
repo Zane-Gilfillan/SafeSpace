@@ -50,7 +50,7 @@ function initMap() {
             lng: position.coords.longitude,
           };
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found.");
+          infoWindow.setContent("<h1 class='found-you'>" + "You are Here!" + "</h1>");
           infoWindow.open(map);
           map.setCenter(pos);
         },
@@ -73,7 +73,7 @@ function initMap() {
       //add event listener for each marker to get info about
       //the individual markers here
       let newWindow = new google.maps.InfoWindow({
-        content: "<h1>Name:</h1>" + location.name + "<h1>Address</h1>" + location.streetName + "<a href='#' onclick='save(" + i + ")'>Save</a>",
+        content: "<h1 id='name-head' class='loc-name'>" + location.name +"</h1>" + "<h1 id='street-head' class='loc-street'>" + location.streetName + "</h1>" + "<button class='save-btn' href='#' onclick='save(" + i + ")'>save space</button>",
       })
       let newMark = new google.maps.Marker({
         position: location,
@@ -81,6 +81,9 @@ function initMap() {
         title: "String for now",
         label: labels[i % labels.length],
       });
+
+      
+
       newMark.addListener("click", () => {
         // console.log(this)
         map.setZoom(16)
@@ -117,7 +120,8 @@ function save (i) {
   window.localStorage.getItem(i)
 // => return "true" if was saved or "null" if not
 }
- 
+
+
 
 const locations = 
 [
@@ -722,8 +726,3 @@ const locations =
     "streetName": "5856 North Broadway"
   }
 ]
-
-
-
-
-  
