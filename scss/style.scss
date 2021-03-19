@@ -9,6 +9,7 @@
 
 $light-color: rgb(243, 243, 247);
 $main-blue: rgb(40, 52, 216);
+$main-yellow: #ffae00;
 
 
 //Utilities
@@ -77,6 +78,7 @@ body {
 .showcase {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
     padding: 1rem;
 
@@ -94,5 +96,32 @@ body {
         width: 30rem;
         position: relative;
         right: 1rem;
+    }
+}
+
+//Safe Space Area
+
+.space-save {
+
+    .card {
+        background-color: $light-color;
+        border-radius: 1rem;
+        opacity: .9;
+
+        
+
+        .card-divider {
+            background-color: $light-color;
+
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .button {
+            background-color: $main-yellow ;
+            border: 1rem;
+
+        }
     }
 }
