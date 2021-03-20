@@ -28,6 +28,6 @@ Create a user friendly application for gender nonconforming           individual
 
 		Zane Gilfillan   
 		Kevin Jun  
-		Chris kennedy 
+		Chris Kennedy 
 		Dennis Irvin 
 

@@ -40,7 +40,10 @@
                 <p id="address"></p>
                 <ul id="saved"><ul></ul>
             </div>
-            <button class="button" data-cardSelectButton>clear last space</button>
+            <button class="button" data-cardSelectButton onclick="deleteItems()"> 
+                Clear Last Space
+              </button> 
+
         </div>
         <!-- <div class="card card-select" data-cardSelect>
             <div class="card-divider">
@@ -120,6 +123,10 @@ if (window.localStorage.getItem(i)) {
 document.getElementById("saved").innerHTML += "<h2>" + location.name + "</h2>";  
 }
 });
+
+function deleteItems() {  
+            localStorage.clear(); 
+        } 
 
 </script>
 
