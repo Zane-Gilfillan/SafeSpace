@@ -5,7 +5,7 @@
     font-size: 62.5%;
 }
 
-//variables 
+//variables
 
 $light-color: rgb(243, 243, 247);
 $main-blue: rgb(40, 52, 216);
@@ -31,7 +31,7 @@ $main-yellow: #ffae00;
 
 #map {
     height: 30rem;
-    width: 100%;  
+    width: 100%;
 }
 
 .found-you {
@@ -128,24 +128,37 @@ body {
 .space-save {
 
     .card {
-        background-color: $light-color;
+        background-color: $main-blue;
         border-radius: 1rem;
-        opacity: .9;
+        opacity: .8;
+        padding: 2rem;
+        margin: 1rem;
 
         
+        h2 {
+
+            background-color: #ffb81e;
+            padding: 1rem;
+            border-radius: 1rem;
+            z-index: 1;
+        }
 
         .card-divider {
-            background-color: $light-color;
+
+            display: none;
 
             h4 {
-                font-size: 1.5rem;
+                font-size: .5rem;
+                padding: 1rem;
+
             }
         }
 
         .button {
             background-color: $main-yellow ;
-            border: 1rem;
-
+            color: rgb(14, 13, 13);
+            border-radius: 1rem;
+            font-size: 1.2rem;
         }
     }
 }
