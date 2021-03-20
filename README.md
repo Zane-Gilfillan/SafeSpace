@@ -1,6 +1,8 @@
 # Chicago Safe Bathroom Locator app
 
 ![map photo](img/final.png)
+![recording (1)](https://user-images.githubusercontent.com/73242250/111882209-6816a380-8982-11eb-9546-5088f371da01.gif)
+
 
 # Concept
 
