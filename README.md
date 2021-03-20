@@ -14,7 +14,7 @@ Create a user friendly application for gender nonconforming           individual
 *	When I click on the marker of my choice I am presented with the name, address and a save option for that safe		 bathroom marker.
 *	If I choose to save that marker it is saved to My Safe Spaces.
 *	As a return user I can click on the My Safe Spaces button in the top nav-bar.
-*	I  am then directed to my  My Safe Spaces page where I can click on a previous stored bathroom and be redirected back to the map for that location.  
+
 
 
 ## Sources/Code 
