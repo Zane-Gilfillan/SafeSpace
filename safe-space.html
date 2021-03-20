@@ -30,7 +30,7 @@
 
     <section class="space-save grid">
         
-        <div class="card card-select" data-cardSelect>
+        <div id='data-area' class="card card-select" data-cardSelect>
             <div class="card-divider">
                <!-- <h4>Safe Space</h4>  -->
             </div>
@@ -120,13 +120,18 @@
     locations.forEach((location, i) => {
 
 if (window.localStorage.getItem(i)) {
-document.getElementById("saved").innerHTML += "<h2>" + location.name + "</h2>";  
+document.getElementById("saved").innerHTML += "<h2 id='save-area'>" + location.name + "</h2>";  
 }
 });
 
 function deleteItems() {  
-            localStorage.clear(); 
-        } 
+
+    let saveSpace = document.getElementById('data-area')
+
+    saveSpace.style.display = 'none'
+    localStorage.clear(); 
+
+} 
 
 </script>
 
