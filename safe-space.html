@@ -38,15 +38,16 @@
             <div class="card-section" id="card1">
                 <h5><span id="name"></span></h5>
                 <p id="address"></p>
+                <ul id="saved"><ul></ul>
             </div>
             <button class="button" data-cardSelectButton>go to space</button>
         </div>
-        <div class="card card-select" data-cardSelect>
+        <!-- <div class="card card-select" data-cardSelect>
             <div class="card-divider">
                <h4>Safe Space</h4> 
-            </div>
+            </div> -->
     
-            <div class="card-section" id="card1">
+            <!-- <div class="card-section" id="card2">
                 <h5><span id="name"></span></h5>
                 <p id="address"> </p>
             </div>
@@ -57,7 +58,7 @@
                <h4>Safe Space</h4> 
             </div>
     
-            <div class="card-section" id="card1">
+            <div class="card-section" id="card3">
                 <h5><span id="name"></span></h5>
                 <p id="address"> </p>
             </div>
@@ -68,7 +69,7 @@
                <h4>Safe Space</h4> 
             </div>
     
-            <div class="card-section" id="card1">
+            <div class="card-section" id="card4">
                 <h5><span id="name"></span></h5>
                 <p id="address"> </p>
             </div>
@@ -79,7 +80,7 @@
                <h4>Safe Space</h4> 
             </div>
     
-            <div class="card-section" id="card1">
+            <div class="card-section" id="card5">
                 <h5><span id="name"></span></h5>
                 <p id="address"> </p>
             </div>
@@ -90,12 +91,12 @@
                <h4>Safe Space</h4> 
             </div>
     
-            <div class="card-section" id="card1">
+            <div class="card-section" id="card6">
                 <h5><span id="name"></span></h5>
                 <p id="address">  </p>
             </div>
             <button class="button" data-cardSelectButton>go to space</button>
-        </div>
+        </div> -->
     </section>
 
     
@@ -116,7 +117,7 @@
     locations.forEach((location, i) => {
 
 if (window.localStorage.getItem(i)) {
-document.getElementById("saved").innerHTML += "<li>" + location.name + "</li>";  
+document.getElementById("saved").innerHTML += "<h2>" + location.name + "</h2>";  
 }
 });
 
