@@ -48,6 +48,7 @@ function initMap() {
           const pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
+            zoom: 20,
           };
           infoWindow.setPosition(pos);
           infoWindow.setContent("<h1 class='found-you'>" + "You are Here!" + "</h1>");
@@ -78,7 +79,7 @@ function initMap() {
       let newMark = new google.maps.Marker({
         position: location,
         map,
-        title: "String for now",
+        title: "safe bathroom",
         label: labels[i % labels.length],
       });
 

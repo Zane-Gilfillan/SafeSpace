@@ -1,9 +1,20 @@
 # Chicago Safe Bathroom Locator app
 
+![map photo](img/final.png)
 
-## Concept
+# Concept
 
-Create a user friendly application for gender nonconforming           individuals both, living in and visiting the city of Chicago to utilize for finding a safe restroom.
+Create a user friendly application for gender nonconforming           individuals both, living in and visiting the city of Chicago to help finding a safe restroom.
+
+# Data
+
+We are using Refuge Restroom's current api which can be accessed here:
+
+https://www.refugerestrooms.org/api/docs/
+
+If you would like to contribute safe spaces and locations that aren't on the map please click this link below, all help is important!
+
+https://www.refugerestrooms.org/restrooms/new
 
 ## User story
 
