@@ -1,6 +1,6 @@
-# Chicago Safe Bathroom Locator app
+# Chicago Safe Bathroom Locator
 
-![map photo](img/final.png)
+![map photo](img/final-update.png)
 ![recording (1)](https://user-images.githubusercontent.com/73242250/111882209-6816a380-8982-11eb-9546-5088f371da01.gif)
 
 
@@ -43,4 +43,7 @@ https://www.refugerestrooms.org/restrooms/new
 		Kevin Jun  
 		Chris Kennedy 
 		Dennis Irvin 
+
+# Live Application
+https://zane-gilfillan.github.io/Bathroom-Finder/
 
