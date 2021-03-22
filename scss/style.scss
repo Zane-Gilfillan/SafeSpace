@@ -40,6 +40,7 @@ $main-yellow: #ffae00;
 
 .loc-name {
     color: black;
+    
 }
 
 .loc-street {
@@ -54,7 +55,7 @@ $main-yellow: #ffae00;
     border-radius: 2rem;
     cursor: pointer;
     position: relative;
-    left: 4rem;
+    left: 1rem;
     padding: .5rem;
 }
 
@@ -70,6 +71,7 @@ body {
 .nav-bar {
 
     .nav {
+
         a {
             color: #fff;
             font-size: .9rem;
@@ -207,3 +209,53 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 375px) {
+
+    .nav-bar {
+        
+        font-family: Lato;
+
+        .nav {
+
+            li {
+
+                a {
+                    color: $main-yellow;
+                    border-bottom: .1rem solid $main-yellow;
+                    
+                }
+                
+            }
+        }
+    }
+    
+    .showcase {
+
+        .map-container {
+            width: 21rem;
+            
+        }
+
+        .btn {
+            width: 21rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .info-area {
+
+        .final-btn {
+            padding: 1rem;
+            position: relative;
+            right: 1.3rem;
+            bottom: 1rem;
+        }
+
+        a {
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+  }
