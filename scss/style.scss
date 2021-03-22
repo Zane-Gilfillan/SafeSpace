@@ -210,7 +210,56 @@ body {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
+
+    .nav-bar {
+        
+        font-family: Lato;
+
+        .nav {
+
+            li {
+
+                a {
+                    color: $main-yellow;
+                    border-bottom: .1rem solid $main-yellow;
+                    
+                }
+                
+            }
+        }
+    }
+    
+    .showcase {
+
+        .map-container {
+            width: 30rem;
+            
+        }
+
+        .btn {
+            width: 30rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .info-area {
+
+        .final-btn {
+            padding: 1rem;
+            position: relative;
+            right: 1.3rem;
+            bottom: 1rem;
+        }
+
+        a {
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
 
     .nav-bar {
         
